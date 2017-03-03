@@ -1,4 +1,4 @@
-package com.dineshonjaval.progress.config;
+package com.itfaculty.progress.config;
 
 import java.util.Properties;
 
@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({"com.dineshonjaval.progress"})
+@ComponentScan({"com.itfaculty.progress"})
 @PropertySource(value = {"classpath:application.properties"})
 public class HibernateConfiguration {
 
@@ -29,7 +29,7 @@ public class HibernateConfiguration {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[]{"com.dineshonjaval.progress.model"});
+        sessionFactory.setPackagesToScan(new String[]{"com.itfaculty.progress.model"});
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }

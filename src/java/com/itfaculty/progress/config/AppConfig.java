@@ -1,4 +1,4 @@
-package com.dineshonjaval.progress.config;
+package com.itfaculty.progress.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +16,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.dineshonjaval.progress")
+@ComponentScan(basePackages = "com.itfaculty.progress")
 public class AppConfig extends WebMvcConfigurerAdapter {
 
     @Override
